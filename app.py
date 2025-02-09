@@ -327,3 +327,6 @@ def sell():
     # Pre-select symbol if provided
     selected_symbol = request.args.get("symbol")
     return render_template("sell.html", stocks=stocks, selected_symbol=selected_symbol)
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=80)
